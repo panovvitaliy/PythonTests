@@ -8,7 +8,7 @@ class TestCar:
         assert car_instance._Car__brand == get_brand
 
     def test_car_model(self, car_instance, get_model):
-        assert car_instance._Car__brand == get_model
+        assert car_instance._Car__model == get_model
 
     def test_start_engine(self, car_instance):
         result = car_instance.start_engine()
