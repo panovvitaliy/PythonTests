@@ -1,0 +1,9 @@
+.idea
+*.xml
+*.json
+*.pyc
+.env
+venv
+pyvenv.cfg
+Lib
+Scripts
