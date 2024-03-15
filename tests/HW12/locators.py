@@ -25,7 +25,7 @@ def test_simple():
 
     # Contact From
     contact_link.click()
-    time.sleep(2)
+    time.sleep(1)
 
     contact_email_input = driver.find_element(by=By.XPATH, value='//form/*/input[@id="recipient-email"]')
     contact_name_input = driver.find_element(by=By.XPATH, value='(//form/div)[2]/input')
@@ -41,7 +41,7 @@ def test_simple():
 
     # Login From
     login_link.click()
-    time.sleep(2)
+    time.sleep(1)
 
     login_username_input = driver.find_element(by=By.ID, value='loginusername')
     login_password_input = driver.find_element(by=By.ID, value='loginpassword')
@@ -56,23 +56,23 @@ def test_simple():
 
     # Product page
     product_samsung_s6.click()
-    time.sleep(2)
+    time.sleep(1)
 
     product_page_product_name = driver.find_element(by=By.CSS_SELECTOR, value='#tbodyid > .name')
     product_page_product_img = driver.find_element(by=By.CSS_SELECTOR, value='img[src*="galaxy"]')
     product_page_product_price = driver.find_element(by=By.CSS_SELECTOR, value='h3.price-container')
     product_page_add_to_card_btn = driver.find_element(by=By.CSS_SELECTOR, value='a[onclick*="addToCart"]')
     product_page_add_to_card_btn.click()
-    time.sleep(2)
+    time.sleep(1)
 
     alert = driver.switch_to.alert
     alert.accept()
-    time.sleep(2)
+    time.sleep(1)
 
     # Shopping Cart page
     shopping_cart_link = driver.find_element(by=By.ID, value='cartur')
     shopping_cart_link.click()
-    time.sleep(2)
+    time.sleep(1)
 
     total_price_info = driver.find_element(by=By.XPATH, value='//*[@id="totalp"]')
     product_name_in_the_cart = driver.find_element(by=By.XPATH, value='(//tr/td)[last()-2]')
@@ -81,7 +81,7 @@ def test_simple():
 
     # Place order form
     place_order_btn.click()
-    time.sleep(2)
+    time.sleep(1)
 
     order_form_name_input = driver.find_element(by=By.XPATH, value='//div[@aria-labelledby="orderModalLabel'
                                                                    '"]/*/*/div[2]/*/div[1]/input[@id="name"]')
@@ -104,8 +104,8 @@ def test_simple():
     order_form_close_x_btn = driver.find_element(by=By.XPATH, value='//div[@aria-labelledby="orderModalLabel'
                                                                     '"]/*/*/*/button[@class="close"]')
     order_form_close_x_btn.click()
-    time.sleep(2)
+    time.sleep(1)
     delete_product_in_the_cart_btn.click()
-    time.sleep(2)
+    time.sleep(1)
 
     # driver.quit()
