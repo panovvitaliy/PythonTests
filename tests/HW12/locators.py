@@ -23,7 +23,7 @@ def test_simple():
     pagination_next_btn = driver.find_element(by=By.CSS_SELECTOR, value='#next2.page-link')
     header_logo = driver.find_element(by=By.XPATH, value='//a/img[@src="bm.png"]')
 
-    # Contact From
+    # Contact Form
     contact_link.click()
     time.sleep(1)
 
@@ -39,7 +39,7 @@ def test_simple():
     contact_form_send_btn = driver.find_element(by=By.CSS_SELECTOR, value='button[onclick="send()"]')
     contact_form_close_btn.click()
 
-    # Login From
+    # Login Form
     login_link.click()
     time.sleep(1)
 
