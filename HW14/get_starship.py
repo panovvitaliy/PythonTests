@@ -37,9 +37,11 @@ def main():
     starship_data = get_starship_data(starship_name)
 
     if starship_data:
+
         # Extract pilot data
         pilots_urls = starship_data["pilots"]
         pilots_info = get_pilots_data(pilots_urls)
+
         # Extract relevant starship data
         starship_info = {
             "name": starship_data["name"],
@@ -53,7 +55,7 @@ def main():
             json.dump(starship_info, json_file, indent=4)
         print("Data saved to millennium_falcon_data.json")
     else:
-        print("Millennium Falcon not found in the data.")
+        print(f"{starship_name} not found in the data.")
 
 
 if __name__ == "__main__":
